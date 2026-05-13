@@ -1,0 +1,42 @@
+{
+  "businessName": "Crystal-Grace Limited & Crystal-Jem Limited",
+  "industry": "Manufacturing",
+  "tone": "professional",
+  "tagline": "Precision Manufacturing Excellence in Nigeria",
+  "sections": [
+    {
+      "id": "hero",
+      "name": "Hero",
+      "copy": "Crystal-Grace Limited & Crystal-Jem Limited - Leading Manufacturing Excellence in Ibadan. With state-of-the-art facilities in Egbeda, we deliver precision manufacturing solutions that drive Nigerian businesses forward. Quality, innovation, and reliability in every product.",
+      "imagePrompt": "Modern industrial manufacturing facility in Nigeria, gleaming metallic surfaces, precision machinery in motion, bright industrial lighting, professional workers in safety gear operating advanced equipment, wide angle shot showing expansive factory floor, blue and silver color scheme, high-tech manufacturing environment",
+      "layout": "centered"
+    },
+    {
+      "id": "about",
+      "name": "About Us",
+      "copy": "Crystal-Grace Limited and Crystal-Jem Limited are twin pillars of manufacturing excellence operating from our facility at No 3 Unity Olosan Road, Alakia, in Egbeda Local Government. We combine cutting-edge manufacturing technology with Nigerian ingenuity to deliver products that meet international standards. Our commitment to quality control, timely delivery, and customer satisfaction has made us a trusted partner for businesses across Nigeria. From concept to completion, we bring precision and professionalism to every project.",
+      "imagePrompt": "Nigerian manufacturing company building exterior, modern industrial architecture, well-maintained facility with company signage, delivery trucks parked outside, blue sky, professional corporate photography, daytime shot, lush greenery around premises, clean and organized compound",
+      "layout": "split"
+    },
+    {
+      "id": "services",
+      "name": "Our Manufacturing Services",
+      "copy": "Custom Manufacturing Solutions: Tailored production runs designed to meet your specific requirements and industry standards.\n\nQuality Assurance: Rigorous testing and inspection protocols ensuring every product meets the highest standards before delivery.\n\nIndustrial Production: Large-scale manufacturing capabilities with consistent quality across high-volume orders.\n\nProduct Development: From prototype to full production, we support your product journey with technical expertise.\n\nSupply Chain Management: Efficient procurement and logistics ensuring timely delivery of your manufactured goods.",
+      "imagePrompt": "Collage of manufacturing processes in Nigerian factory, quality control inspector examining products with precision instruments, assembly line workers, packaging station, raw materials warehouse, forklift moving pallets, organized production floor, bright industrial setting",
+      "layout": "grid"
+    },
+    {
+      "id": "contact",
+      "name": "Contact Us",
+      "copy": "Ready to discuss your manufacturing needs? Crystal-Grace Limited and Crystal-Jem Limited are here to bring your production vision to life. Visit us at our facility in Alakia or reach out through any of our contact channels. Our team of manufacturing experts is ready to provide solutions tailored to your business requirements.",
+      "imagePrompt": "Professional Nigerian business contact scene, modern office reception area with manufacturing awards on wall, friendly receptionist at desk, visitors waiting area, large windows showing factory floor in background, corporate professional atmosphere, warm lighting",
+      "layout": "default"
+    }
+  ],
+  "contact": {
+    "phone": "+234 803 434 2126",
+    "email": "info@crystalgrace.ng",
+    "address": "No 3 Unity Olosan Road, Alakia, Egbeda Local Government, Ibadan, Nigeria",
+    "whatsapp": "https://wa.me/2348034342126"
+  }
+}
