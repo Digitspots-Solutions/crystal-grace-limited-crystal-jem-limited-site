@@ -3,25 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crystal-Grace Limited & Crystal-Jem Limited - Precision Manufacturing Excellence in Nigeria</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700;800&family=Outfit:wght@300;400;500&display=swap">
+    <title>Oil Technologies Refining Solutions Limited - Engineering Excellence in Refinery Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --color-primary: #0b1b2f;
+            --color-accent: #e7bd28;
+            --color-bg: #F8F4EE;
+            --color-text: #0C1E30;
+            --color-surface: #10213a;
+            --color-secondary-accent: #5ca5b5;
+            --font-display: 'Libre Baskerville', serif;
+            --font-body: 'Manrope', sans-serif;
+            --border-radius: 2px;
+        }
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-        }
-
-        :root {
-            --color-primary: #171717;
-            --color-accent: #e07202;
-            --color-bg: #EEEBE5;
-            --color-text: #141414;
-            --color-surface: #2b2b2b;
-            --color-secondary-accent: #7d9ba1;
-            --font-display: 'Exo 2', sans-serif;
-            --font-body: 'Outfit', sans-serif;
-            --border-radius: 0px;
         }
 
         html {
@@ -32,9 +34,20 @@
             font-family: var(--font-body);
             color: var(--color-text);
             background-color: var(--color-bg);
-            line-height: 1.6;
-            overflow-x: hidden;
+            line-height: 1.7;
+            font-weight: 400;
         }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-display);
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+
+        h1 { font-size: 2.5rem; }
+        h2 { font-size: 2rem; }
+        h3 { font-size: 1.5rem; }
 
         @keyframes fadeUp {
             from {
@@ -47,34 +60,21 @@
             }
         }
 
-        section {
-            animation: fadeUp 0.6s ease forwards;
-        }
-
-        section:nth-child(1) { animation-delay: 0s; }
-        section:nth-child(2) { animation-delay: 0.1s; }
-        section:nth-child(3) { animation-delay: 0.2s; }
-        section:nth-child(4) { animation-delay: 0.3s; }
-        section:nth-child(5) { animation-delay: 0.4s; }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 24px;
-        }
-
         /* Navigation */
         nav {
             position: sticky;
             top: 0;
-            background: rgba(23, 23, 23, 0.95);
+            background: rgba(248, 244, 238, 0.95);
             backdrop-filter: blur(10px);
             z-index: 1000;
-            padding: 1.25rem 0;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(11, 27, 47, 0.1);
         }
 
-        nav .container {
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -82,11 +82,10 @@
 
         .logo {
             font-family: var(--font-display);
-            font-size: 1.5rem;
-            font-weight: 800;
-            color: var(--color-accent);
-            text-transform: uppercase;
-            letter-spacing: 1px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--color-primary);
+            text-decoration: none;
         }
 
         .nav-links {
@@ -97,12 +96,10 @@
 
         .nav-links a {
             text-decoration: none;
-            color: #EEEBE5;
+            color: var(--color-text);
             font-weight: 500;
             transition: color 0.3s ease;
             font-size: 0.95rem;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
         }
 
         .nav-links a:hover {
@@ -114,13 +111,12 @@
             flex-direction: column;
             cursor: pointer;
             gap: 4px;
-            z-index: 1001;
         }
 
         .mobile-menu-btn span {
             width: 25px;
             height: 3px;
-            background: #EEEBE5;
+            background: var(--color-text);
             transition: all 0.3s ease;
             transform-origin: center;
         }
@@ -143,8 +139,8 @@
             right: -100%;
             width: 300px;
             height: calc(100vh - 70px);
-            background: var(--color-primary);
-            box-shadow: -2px 0 10px rgba(0, 0, 0, 0.3);
+            background: var(--color-bg);
+            box-shadow: -2px 0 10px rgba(0,0,0,0.1);
             transition: right 0.3s ease;
             z-index: 999;
             padding: 2rem;
@@ -164,14 +160,12 @@
 
         .mobile-menu ul a {
             text-decoration: none;
-            color: #EEEBE5;
+            color: var(--color-text);
             font-size: 1.1rem;
             font-weight: 500;
             transition: color 0.3s ease;
             display: block;
             padding: 0.5rem 0;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
         }
 
         .mobile-menu ul a:hover {
@@ -184,116 +178,111 @@
             height: 100vh;
             display: flex;
             align-items: center;
-            justify-content: center;
-            text-align: center;
+            justify-content: flex-start;
             color: white;
             overflow: hidden;
-            clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+            animation: fadeUp 0.6s ease forwards;
         }
 
-        #hero::before {
-            content: '';
+        .hero-bg {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: url('https://images.pexels.com/photos/7178310/pexels-photo-7178310.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') center/cover;
-            z-index: -2;
-        }
-
-        #hero::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.65);
-            z-index: -1;
-        }
-
-        .hero-content {
-            max-width: 900px;
-            padding: 0 24px;
-            position: relative;
             z-index: 1;
         }
 
+        .hero-bg img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(11, 27, 47, 0.65);
+            z-index: 2;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 3;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            width: 100%;
+        }
+
         .hero-content h1 {
-            font-family: var(--font-display);
-            font-size: 4rem;
-            font-weight: 800;
-            margin-bottom: 1.5rem;
-            line-height: 1.1;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.5);
-        }
-
-        .hero-content .tagline {
-            font-size: 1.5rem;
+            font-size: 3.5rem;
             margin-bottom: 1rem;
-            font-weight: 600;
-            color: var(--color-accent);
-            text-transform: uppercase;
-            letter-spacing: 1px;
+            max-width: 800px;
         }
 
-        .hero-content p {
-            font-size: 1.15rem;
-            margin-bottom: 2.5rem;
+        .hero-tagline {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--color-accent);
+            font-family: var(--font-display);
+            font-style: italic;
+        }
+
+        .hero-description {
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin-bottom: 2rem;
             line-height: 1.8;
-            font-weight: 300;
         }
 
         .cta-button {
             display: inline-block;
+            padding: 1rem 2.5rem;
             background: var(--color-accent);
-            color: white;
-            padding: 1rem 3rem;
+            color: var(--color-primary);
             text-decoration: none;
             font-weight: 600;
-            font-size: 1.1rem;
+            border-radius: var(--border-radius);
             transition: all 0.3s ease;
-            border: 3px solid var(--color-accent);
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.3);
+            font-size: 1.1rem;
         }
 
         .cta-button:hover {
-            background: transparent;
-            color: var(--color-accent);
-            transform: translate(3px, 3px);
-            box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.3);
+            background: #f5d055;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(231, 189, 40, 0.4);
+        }
+
+        /* Section Base */
+        section {
+            padding: 80px 0;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            color: var(--color-primary);
+            margin-bottom: 3rem;
+            text-align: center;
         }
 
         /* About Section */
         #about {
-            padding: 80px 0;
-            background: var(--color-bg);
-            position: relative;
+            background: white;
+            animation: fadeUp 0.6s ease forwards;
+            animation-delay: 0.1s;
         }
 
-        #about::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: repeating-linear-gradient(
-                45deg,
-                transparent,
-                transparent 10px,
-                rgba(23, 23, 23, 0.02) 10px,
-                rgba(23, 23, 23, 0.02) 20px
-            );
-            pointer-events: none;
-        }
-
-        .about-content {
+        .about-split {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 4rem;
@@ -301,321 +290,408 @@
         }
 
         .about-image {
-            position: relative;
+            width: 100%;
+            height: 500px;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(11, 27, 47, 0.15);
         }
 
         .about-image img {
             width: 100%;
-            height: 500px;
+            height: 100%;
             object-fit: cover;
-            box-shadow: 12px 12px 0 rgba(0, 0, 0, 0.2);
         }
 
-        .about-text h2 {
-            font-family: var(--font-display);
-            font-size: 3rem;
-            font-weight: 800;
-            margin-bottom: 1.5rem;
+        .about-content h2 {
+            font-size: 2.2rem;
             color: var(--color-primary);
-            text-transform: uppercase;
-            letter-spacing: 1px;
+            margin-bottom: 1.5rem;
         }
 
-        .about-text p {
-            font-size: 1.1rem;
-            line-height: 1.8;
+        .about-content p {
             margin-bottom: 1.5rem;
-            font-weight: 300;
+            font-size: 1.05rem;
         }
 
         /* Services Section */
         #services {
-            padding: 80px 0;
-            background: var(--color-surface);
-            color: white;
-            clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
-        }
-
-        #services h2 {
-            font-family: var(--font-display);
-            font-size: 3rem;
-            font-weight: 800;
-            margin-bottom: 3rem;
-            text-align: center;
-            color: var(--color-accent);
-            text-transform: uppercase;
-            letter-spacing: 1px;
+            background: var(--color-bg);
+            animation: fadeUp 0.6s ease forwards;
+            animation-delay: 0.2s;
         }
 
         .services-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 2rem;
+            margin-top: 3rem;
         }
 
         .service-card {
-            background: rgba(238, 235, 229, 0.05);
+            background: white;
             padding: 2rem;
-            border-left: 4px solid var(--color-accent);
+            border-radius: var(--border-radius);
+            box-shadow: 0 4px 20px rgba(11, 27, 47, 0.08);
             transition: all 0.3s ease;
-            position: relative;
-        }
-
-        .service-card::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            width: 0;
-            height: 4px;
-            background: var(--color-accent);
-            transition: width 0.3s ease;
-        }
-
-        .service-card:hover::after {
-            width: 100%;
+            border-left: 4px solid var(--color-accent);
         }
 
         .service-card:hover {
-            transform: translateX(8px);
-            background: rgba(238, 235, 229, 0.08);
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(11, 27, 47, 0.15);
         }
 
         .service-card h3 {
-            font-family: var(--font-display);
-            font-size: 1.5rem;
-            font-weight: 700;
+            color: var(--color-primary);
             margin-bottom: 1rem;
-            color: var(--color-accent);
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
+            font-size: 1.3rem;
         }
 
         .service-card p {
-            font-size: 1rem;
+            font-size: 0.95rem;
             line-height: 1.7;
-            font-weight: 300;
+        }
+
+        /* Expertise Section */
+        #expertise {
+            background: var(--color-surface);
+            color: white;
+            animation: fadeUp 0.6s ease forwards;
+            animation-delay: 0.3s;
+            position: relative;
+        }
+
+        #expertise::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://images.pexels.com/photos/11347815/pexels-photo-11347815.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.15;
+            z-index: 0;
+        }
+
+        #expertise .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        #expertise .section-title {
+            color: white;
+        }
+
+        .expertise-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .expertise-content h2 {
+            color: var(--color-accent);
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .expertise-content p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .expertise-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .expertise-list li {
+            list-style: none;
+            padding: 0.8rem 1rem;
+            background: rgba(231, 189, 40, 0.1);
+            border-left: 3px solid var(--color-accent);
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+        }
+
+        .expertise-list li:hover {
+            background: rgba(231, 189, 40, 0.2);
+            transform: translateX(5px);
+        }
+
+        /* Commitment Section */
+        #commitment {
+            background: white;
+            animation: fadeUp 0.6s ease forwards;
+            animation-delay: 0.4s;
+        }
+
+        .commitment-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .commitment-content h2 {
+            color: var(--color-primary);
+            font-size: 2.2rem;
+            margin-bottom: 3rem;
+        }
+
+        .commitment-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2.5rem;
+            margin-top: 3rem;
+            text-align: left;
+        }
+
+        .commitment-item h3 {
+            color: var(--color-accent);
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+
+        .commitment-item p {
+            font-size: 0.95rem;
+            line-height: 1.7;
         }
 
         /* Contact Section */
         #contact {
-            padding: 80px 0;
             background: var(--color-bg);
+            animation: fadeUp 0.6s ease forwards;
+            animation-delay: 0.5s;
         }
 
-        #contact h2 {
-            font-family: var(--font-display);
-            font-size: 3rem;
-            font-weight: 800;
-            margin-bottom: 2rem;
-            text-align: center;
-            color: var(--color-primary);
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .contact-content {
+        .contact-split {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 4rem;
             align-items: center;
-            max-width: 1000px;
-            margin: 0 auto;
         }
 
-        .contact-info {
-            background: var(--color-surface);
-            padding: 3rem;
-            color: white;
-            box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.2);
-        }
-
-        .contact-info p {
-            font-size: 1.1rem;
-            line-height: 1.8;
-            margin-bottom: 2rem;
-            font-weight: 300;
-        }
-
-        .contact-details {
-            margin-top: 2rem;
-        }
-
-        .contact-item {
-            margin-bottom: 1.5rem;
-            display: flex;
-            align-items: flex-start;
-            gap: 1rem;
-        }
-
-        .contact-item strong {
-            color: var(--color-accent);
-            min-width: 80px;
-            font-weight: 600;
-            text-transform: uppercase;
-            font-size: 0.9rem;
-            letter-spacing: 0.5px;
-        }
-
-        .contact-item a {
-            color: white;
-            text-decoration: none;
-            transition: color 0.3s ease;
-            font-weight: 300;
-        }
-
-        .contact-item a:hover {
-            color: var(--color-accent);
-        }
-
-        .whatsapp-button {
-            display: inline-block;
-            background: #25D366;
-            color: white;
-            padding: 1rem 2rem;
-            text-decoration: none;
-            font-weight: 600;
-            margin-top: 1.5rem;
-            transition: all 0.3s ease;
-            border: 3px solid #25D366;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.3);
-        }
-
-        .whatsapp-button:hover {
-            background: transparent;
-            color: #25D366;
-            transform: translate(3px, 3px);
-            box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.3);
+        .contact-image {
+            width: 100%;
+            height: 500px;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(11, 27, 47, 0.15);
         }
 
         .contact-image img {
             width: 100%;
-            height: 500px;
+            height: 100%;
             object-fit: cover;
-            box-shadow: 12px 12px 0 rgba(0, 0, 0, 0.2);
         }
 
-        /* Floating WhatsApp Button */
-        .floating-whatsapp {
+        .contact-content h2 {
+            color: var(--color-primary);
+            font-size: 2.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .contact-info {
+            margin-bottom: 2rem;
+        }
+
+        .contact-info p {
+            margin-bottom: 0.8rem;
+            font-size: 1.05rem;
+        }
+
+        .contact-info strong {
+            color: var(--color-primary);
+            font-weight: 600;
+        }
+
+        .contact-info a {
+            color: var(--color-secondary-accent);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-info a:hover {
+            color: var(--color-accent);
+        }
+
+        .contact-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .contact-btn {
+            display: inline-block;
+            padding: 0.8rem 1.8rem;
+            background: var(--color-primary);
+            color: white;
+            text-decoration: none;
+            border-radius: var(--border-radius);
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .contact-btn:hover {
+            background: var(--color-surface);
+            transform: translateY(-2px);
+        }
+
+        .contact-btn.whatsapp {
+            background: #25D366;
+        }
+
+        .contact-btn.whatsapp:hover {
+            background: #20ba5a;
+        }
+
+        /* WhatsApp Float Button */
+        .whatsapp-float {
             position: fixed;
             bottom: 30px;
             right: 30px;
-            background: #25D366;
             width: 60px;
             height: 60px;
+            background: #25D366;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-            z-index: 999;
-            transition: transform 0.3s ease;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+            z-index: 1000;
+            transition: all 0.3s ease;
             text-decoration: none;
-            font-size: 2rem;
-            color: white;
         }
 
-        .floating-whatsapp:hover {
+        .whatsapp-float:hover {
             transform: scale(1.1);
+            box-shadow: 0 6px 25px rgba(37, 211, 102, 0.6);
+        }
+
+        .whatsapp-float svg {
+            width: 32px;
+            height: 32px;
+            fill: white;
         }
 
         /* Footer */
         footer {
             background: var(--color-primary);
             color: white;
-            text-align: center;
             padding: 2rem 0;
+            text-align: center;
         }
 
         footer p {
             font-size: 0.95rem;
-            font-weight: 300;
         }
 
         /* Responsive */
-        @media (max-width: 1024px) {
-            .hero-content h1 {
-                font-size: 3rem;
-            }
-
-            .about-content,
-            .contact-content {
-                grid-template-columns: 1fr;
-                gap: 2rem;
-            }
-        }
-
         @media (max-width: 768px) {
             .nav-links {
                 display: none;
             }
-
+            
             .mobile-menu-btn {
                 display: flex;
             }
 
+            h1 { font-size: 2rem; }
+            h2 { font-size: 1.6rem; }
+            
             section {
-                padding: 48px 0 !important;
-            }
-
-            #hero,
-            #about,
-            #services,
-            #contact {
                 padding: 48px 0;
             }
 
             .hero-content h1 {
-                font-size: 2.5rem;
+                font-size: 2.2rem;
             }
 
-            .hero-content .tagline {
+            .hero-tagline {
                 font-size: 1.2rem;
             }
 
-            .hero-content p {
+            .hero-description {
                 font-size: 1rem;
             }
 
-            .about-text h2,
-            #services h2,
-            #contact h2 {
-                font-size: 2rem;
+            .about-split,
+            .contact-split {
+                grid-template-columns: 1fr;
+                gap: 2rem;
             }
 
-            .about-image img,
-            .contact-image img {
-                height: 300px;
+            .about-image,
+            .contact-image {
+                height: 350px;
             }
 
             .services-grid {
                 grid-template-columns: 1fr;
             }
 
-            .contact-info {
-                padding: 2rem;
+            .expertise-list {
+                grid-template-columns: 1fr;
             }
 
-            .floating-whatsapp {
+            .commitment-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .contact-buttons {
+                flex-direction: column;
+            }
+
+            .contact-btn {
+                text-align: center;
+            }
+
+            .whatsapp-float {
                 width: 50px;
                 height: 50px;
-                font-size: 1.5rem;
                 bottom: 20px;
                 right: 20px;
+            }
+
+            .whatsapp-float svg {
+                width: 26px;
+                height: 26px;
+            }
+        }
+
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .container {
+                padding: 0 3rem;
+            }
+
+            .hero-content h1 {
+                font-size: 3rem;
+            }
+
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
             }
         }
     </style>
 </head>
 <body>
+    <!-- Navigation -->
     <nav>
-        <div class="container">
-            <div class="logo">CG&CJ</div>
+        <div class="nav-container">
+            <a href="#hero" class="logo">Oil Technologies</a>
             <ul class="nav-links">
                 <li><a href="#hero">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
+                <li><a href="#expertise">Expertise</a></li>
+                <li><a href="#commitment">Commitment</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="mobile-menu-btn">
@@ -624,127 +700,177 @@
                 <span></span>
             </div>
         </div>
+        <div class="mobile-menu">
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#expertise">Expertise</a></li>
+                <li><a href="#commitment">Commitment</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <div class="mobile-menu">
-        <ul>
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </div>
-
+    <!-- Hero Section -->
     <section id="hero">
+        <div class="hero-bg">
+            <img src="https://images.pexels.com/photos/10407691/pexels-photo-10407691.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Oil refinery facility">
+        </div>
+        <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1>Crystal-Grace Limited & Crystal-Jem Limited</h1>
-            <p class="tagline">Precision Manufacturing Excellence in Nigeria</p>
-            <p>Leading Manufacturing Excellence in Ibadan. With state-of-the-art facilities in Egbeda, we deliver precision manufacturing solutions that drive Nigerian businesses forward. Quality, innovation, and reliability in every product.</p>
-            <a href="#contact" class="cta-button">Get Started</a>
+            <h1>Oil Technologies Refining Solutions Limited</h1>
+            <p class="hero-tagline">Engineering Excellence in Refinery Solutions</p>
+            <p class="hero-description">Leading providers of advanced process engineering solutions for the oil and gas industry across Nigeria. With specialized expertise in refinery operations, we deliver world-class technical services that optimize production efficiency and ensure operational safety.</p>
+            <a href="#contact" class="cta-button">Get a Consultation</a>
         </div>
     </section>
 
+    <!-- About Section -->
     <section id="about">
         <div class="container">
-            <div class="about-content">
+            <div class="about-split">
                 <div class="about-image">
-                    <img src="https://images.pexels.com/photos/36869052/pexels-photo-36869052.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Crystal-Grace Limited & Crystal-Jem Limited Facility">
+                    <img src="https://images.pexels.com/photos/28247164/pexels-photo-28247164.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Professional engineer in refinery">
                 </div>
-                <div class="about-text">
-                    <h2>About Us</h2>
-                    <p>Crystal-Grace Limited and Crystal-Jem Limited are twin pillars of manufacturing excellence operating from our facility at No 3 Unity Olosan Road, Alakia, in Egbeda Local Government. We combine cutting-edge manufacturing technology with Nigerian ingenuity to deliver products that meet international standards.</p>
-                    <p>Our commitment to quality control, timely delivery, and customer satisfaction has made us a trusted partner for businesses across Nigeria. From concept to completion, we bring precision and professionalism to every project.</p>
+                <div class="about-content">
+                    <h2>About Oil Technologies</h2>
+                    <p>Oil Technologies Refining Solutions Limited, also operating as Oil Technologies Process Engineering Co, is a premier engineering firm specializing in oil and gas refinery solutions. Based in Egbeda Local Government, Nigeria, we bring deep technical expertise and industry knowledge to every project.</p>
+                    <p>Our team is led by experienced refinery process engineers who understand the complexities of hydrocarbon processing, distillation systems, catalytic operations, and process optimization. We are committed to delivering solutions that meet international standards while addressing the unique challenges of the Nigerian oil and gas sector.</p>
+                    <p>With a foundation built on technical excellence and operational integrity, we partner with refineries, petrochemical plants, and energy companies to enhance their processing capabilities and achieve sustainable operational performance.</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Services Section -->
     <section id="services">
         <div class="container">
-            <h2>Our Manufacturing Services</h2>
+            <h2 class="section-title">Process Engineering Solutions</h2>
             <div class="services-grid">
                 <div class="service-card">
-                    <h3>Custom Manufacturing Solutions</h3>
-                    <p>Tailored production runs designed to meet your specific requirements and industry standards.</p>
+                    <h3>Refinery Process Design</h3>
+                    <p>Comprehensive design and engineering services for crude oil distillation units, catalytic cracking systems, and hydroprocessing facilities. We develop efficient process configurations that maximize yield and product quality.</p>
                 </div>
                 <div class="service-card">
-                    <h3>Quality Assurance</h3>
-                    <p>Rigorous testing and inspection protocols ensuring every product meets the highest standards before delivery.</p>
+                    <h3>Process Optimization & Troubleshooting</h3>
+                    <p>Advanced analysis and optimization of existing refinery operations. Our engineers identify bottlenecks, improve efficiency, and resolve complex operational challenges to enhance overall plant performance.</p>
                 </div>
                 <div class="service-card">
-                    <h3>Industrial Production</h3>
-                    <p>Large-scale manufacturing capabilities with consistent quality across high-volume orders.</p>
+                    <h3>Technical Consultancy</h3>
+                    <p>Expert advisory services covering process safety, equipment selection, regulatory compliance, and technology evaluation. We provide strategic guidance for refinery modernization and capacity expansion projects.</p>
                 </div>
                 <div class="service-card">
-                    <h3>Product Development</h3>
-                    <p>From prototype to full production, we support your product journey with technical expertise.</p>
+                    <h3>Operational Training & Support</h3>
+                    <p>Specialized training programs for operations personnel, process engineers, and technical staff. We transfer knowledge and build local capacity for sustainable refinery operations.</p>
                 </div>
                 <div class="service-card">
-                    <h3>Supply Chain Management</h3>
-                    <p>Efficient procurement and logistics ensuring timely delivery of your manufactured goods.</p>
+                    <h3>Project Management</h3>
+                    <p>End-to-end project delivery for refinery construction, modification, and turnaround projects. Our structured approach ensures on-time, on-budget completion while maintaining the highest safety standards.</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Expertise Section -->
+    <section id="expertise">
+        <div class="container">
+            <div class="expertise-content">
+                <h2>Technical Capabilities</h2>
+                <p>Our process engineering expertise covers the full spectrum of refinery operations:</p>
+                <ul class="expertise-list">
+                    <li>Crude Oil Distillation & Fractionation</li>
+                    <li>Catalytic Reforming & Cracking Processes</li>
+                    <li>Hydrocracking & Hydrotreating Systems</li>
+                    <li>Process Safety & Hazard Analysis</li>
+                    <li>Equipment Design & Specification</li>
+                    <li>Process Simulation & Modeling</li>
+                    <li>Energy Efficiency Optimization</li>
+                    <li>Environmental Compliance Solutions</li>
+                    <li>Instrumentation & Control Systems</li>
+                    <li>Maintenance Engineering Support</li>
+                </ul>
+                <p style="margin-top: 2rem;">We combine international best practices with local operational knowledge to deliver solutions that work in the Nigerian context. Our engineers stay current with the latest process technologies and industry developments to provide cutting-edge solutions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Commitment Section -->
+    <section id="commitment">
+        <div class="container">
+            <div class="commitment-content">
+                <h2>Quality, Safety & Excellence</h2>
+                <p>At Oil Technologies Refining Solutions Limited, we are committed to:</p>
+                <div class="commitment-grid">
+                    <div class="commitment-item">
+                        <h3>Technical Excellence</h3>
+                        <p>Delivering engineering solutions that meet and exceed industry standards, leveraging proven methodologies and innovative approaches.</p>
+                    </div>
+                    <div class="commitment-item">
+                        <h3>Safety First</h3>
+                        <p>Prioritizing process safety in every design, ensuring operations protect personnel, assets, and the environment.</p>
+                    </div>
+                    <div class="commitment-item">
+                        <h3>Operational Reliability</h3>
+                        <p>Designing robust systems that deliver consistent performance and minimize unplanned downtime.</p>
+                    </div>
+                    <div class="commitment-item">
+                        <h3>Local Capacity Building</h3>
+                        <p>Developing Nigerian engineering talent and contributing to the growth of indigenous technical expertise in the oil and gas sector.</p>
+                    </div>
+                    <div class="commitment-item">
+                        <h3>Sustainable Solutions</h3>
+                        <p>Incorporating environmental considerations and energy efficiency into all our engineering solutions.</p>
+                    </div>
+                    <div class="commitment-item">
+                        <h3>Client Partnership</h3>
+                        <p>Building long-term relationships based on trust, transparency, and consistent delivery of value.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
     <section id="contact">
         <div class="container">
-            <h2>Contact Us</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <p>Ready to discuss your manufacturing needs? Crystal-Grace Limited and Crystal-Jem Limited are here to bring your production vision to life. Visit us at our facility in Alakia or reach out through any of our contact channels.</p>
-                    <p>Our team of manufacturing experts is ready to provide solutions tailored to your business requirements.</p>
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <strong>Phone:</strong>
-                            <a href="tel:+2348034342126">+234 803 434 2126</a>
-                        </div>
-                        <div class="contact-item">
-                            <strong>Email:</strong>
-                            <a href="mailto:info@crystalgrace.ng">info@crystalgrace.ng</a>
-                        </div>
-                        <div class="contact-item">
-                            <strong>Address:</strong>
-                            <span>No 3 Unity Olosan Road, Alakia, Egbeda Local Government, Ibadan, Nigeria</span>
-                        </div>
+            <div class="contact-split">
+                <div class="contact-content">
+                    <h2>Get in Touch</h2>
+                    <p>Ready to discuss your refinery process engineering needs? Our team is available to provide expert consultation and develop customized solutions for your operations.</p>
+                    <div class="contact-info">
+                        <p><strong>Oil Technologies Refining Solutions Limited</strong></p>
+                        <p>No 3 Unity Olosan Road, Alakia<br>
+                        Egbeda Local Government<br>
+                        Nigeria</p>
+                        <p><strong>Phone:</strong> <a href="tel:+2348034342126">+234 803 434 2126</a></p>
+                        <p><strong>Email:</strong> <a href="mailto:info@oiltechnologies.org">info@oiltechnologies.org</a></p>
+                        <p><strong>Business Hours:</strong><br>
+                        Monday - Friday: 8:00 AM - 5:00 PM<br>
+                        Saturday: 9:00 AM - 2:00 PM</p>
                     </div>
-                    <a href="https://wa.me/2348034342126" class="whatsapp-button">Chat on WhatsApp</a>
+                    <p>Whether you need process design, optimization services, technical consultancy, or project management support, we are here to help. Contact us today to schedule a consultation with our experienced process engineers.</p>
+                    <div class="contact-buttons">
+                        <a href="tel:+2348034342126" class="contact-btn">Call Us</a>
+                        <a href="mailto:info@oiltechnologies.org" class="contact-btn">Email Us</a>
+                        <a href="https://wa.me/2348034342126" class="contact-btn whatsapp" target="_blank">WhatsApp</a>
+                    </div>
                 </div>
                 <div class="contact-image">
-                    <img src="https://images.pexels.com/photos/30677719/pexels-photo-30677719.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Contact Crystal-Grace Limited & Crystal-Jem Limited">
+                    <img src="https://images.pexels.com/photos/256148/pexels-photo-256148.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Modern office building">
                 </div>
             </div>
         </div>
     </section>
 
-    <a href="https://wa.me/2348034342126" class="floating-whatsapp" aria-label="Chat on WhatsApp">💬</a>
-
+    <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2025 Crystal-Grace Limited & Crystal-Jem Limited. All rights reserved.</p>
+            <p>&copy; 2025 Oil Technologies Refining Solutions Limited. All rights reserved.</p>
         </div>
     </footer>
 
-    <script>
-        // Mobile menu toggle
-        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-        const mobileMenu = document.querySelector('.mobile-menu');
-
-        if (mobileMenuBtn && mobileMenu) {
-            mobileMenuBtn.addEventListener('click', () => {
-                mobileMenuBtn.classList.toggle('active');
-                mobileMenu.classList.toggle('active');
-            });
-
-            // Close mobile menu when clicking a link
-            const mobileLinks = mobileMenu.querySelectorAll('a');
-            mobileLinks.forEach(link => {
-                link.addEventListener('click', () => {
-                    mobileMenuBtn.classList.remove('active');
-                    mobileMenu.classList.remove('active');
-                });
-            });
-        }
-    </script>
-</body>
-</html>
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/2348034342126" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224
