@@ -1,42 +1,56 @@
 {
-  "businessName": "Crystal-Grace Limited & Crystal-Jem Limited",
-  "industry": "Manufacturing",
-  "tone": "professional",
-  "tagline": "Precision Manufacturing Excellence in Nigeria",
+  "businessName": "Oil Technologies Refining Solutions Limited",
+  "industry": "Oil & Gas Process Engineering",
+  "tone": "professional and authoritative",
+  "tagline": "Engineering Excellence in Refinery Solutions",
   "sections": [
     {
       "id": "hero",
-      "name": "Hero",
-      "copy": "Crystal-Grace Limited & Crystal-Jem Limited - Leading Manufacturing Excellence in Ibadan. With state-of-the-art facilities in Egbeda, we deliver precision manufacturing solutions that drive Nigerian businesses forward. Quality, innovation, and reliability in every product.",
-      "imagePrompt": "Modern industrial manufacturing facility in Nigeria, gleaming metallic surfaces, precision machinery in motion, bright industrial lighting, professional workers in safety gear operating advanced equipment, wide angle shot showing expansive factory floor, blue and silver color scheme, high-tech manufacturing environment",
+      "name": "Hero Section",
+      "copy": "Oil Technologies Refining Solutions Limited\n\nEngineering Excellence in Refinery Solutions\n\nLeading providers of advanced process engineering solutions for the oil and gas industry across Nigeria. With specialized expertise in refinery operations, we deliver world-class technical services that optimize production efficiency and ensure operational safety.\n\nGet a Consultation",
+      "imagePrompt": "Modern Nigerian oil refinery facility at golden hour, industrial steel structures with pipes and towers against blue sky, professional industrial photography, sharp detail, natural lighting, wide angle view showing scale and sophistication of operations",
       "layout": "centered"
     },
     {
       "id": "about",
       "name": "About Us",
-      "copy": "Crystal-Grace Limited and Crystal-Jem Limited are twin pillars of manufacturing excellence operating from our facility at No 3 Unity Olosan Road, Alakia, in Egbeda Local Government. We combine cutting-edge manufacturing technology with Nigerian ingenuity to deliver products that meet international standards. Our commitment to quality control, timely delivery, and customer satisfaction has made us a trusted partner for businesses across Nigeria. From concept to completion, we bring precision and professionalism to every project.",
-      "imagePrompt": "Nigerian manufacturing company building exterior, modern industrial architecture, well-maintained facility with company signage, delivery trucks parked outside, blue sky, professional corporate photography, daytime shot, lush greenery around premises, clean and organized compound",
+      "copy": "About Oil Technologies\n\nOil Technologies Refining Solutions Limited, also operating as Oil Technologies Process Engineering Co, is a premier engineering firm specializing in oil and gas refinery solutions. Based in Egbeda Local Government, Nigeria, we bring deep technical expertise and industry knowledge to every project.\n\nOur team is led by experienced refinery process engineers who understand the complexities of hydrocarbon processing, distillation systems, catalytic operations, and process optimization. We are committed to delivering solutions that meet international standards while addressing the unique challenges of the Nigerian oil and gas sector.\n\nWith a foundation built on technical excellence and operational integrity, we partner with refineries, petrochemical plants, and energy companies to enhance their processing capabilities and achieve sustainable operational performance.",
+      "imagePrompt": "Professional Nigerian engineer in safety gear examining industrial control panels in a modern refinery control room, technical equipment and monitoring screens visible, professional corporate photography, clean lighting, showing expertise and precision",
       "layout": "split"
     },
     {
       "id": "services",
-      "name": "Our Manufacturing Services",
-      "copy": "Custom Manufacturing Solutions: Tailored production runs designed to meet your specific requirements and industry standards.\n\nQuality Assurance: Rigorous testing and inspection protocols ensuring every product meets the highest standards before delivery.\n\nIndustrial Production: Large-scale manufacturing capabilities with consistent quality across high-volume orders.\n\nProduct Development: From prototype to full production, we support your product journey with technical expertise.\n\nSupply Chain Management: Efficient procurement and logistics ensuring timely delivery of your manufactured goods.",
-      "imagePrompt": "Collage of manufacturing processes in Nigerian factory, quality control inspector examining products with precision instruments, assembly line workers, packaging station, raw materials warehouse, forklift moving pallets, organized production floor, bright industrial setting",
+      "name": "Our Services",
+      "copy": "Process Engineering Solutions\n\nRefinery Process Design\nComprehensive design and engineering services for crude oil distillation units, catalytic cracking systems, and hydroprocessing facilities. We develop efficient process configurations that maximize yield and product quality.\n\nProcess Optimization & Troubleshooting\nAdvanced analysis and optimization of existing refinery operations. Our engineers identify bottlenecks, improve efficiency, and resolve complex operational challenges to enhance overall plant performance.\n\nTechnical Consultancy\nExpert advisory services covering process safety, equipment selection, regulatory compliance, and technology evaluation. We provide strategic guidance for refinery modernization and capacity expansion projects.\n\nOperational Training & Support\nSpecialized training programs for operations personnel, process engineers, and technical staff. We transfer knowledge and build local capacity for sustainable refinery operations.\n\nProject Management\nEnd-to-end project delivery for refinery construction, modification, and turnaround projects. Our structured approach ensures on-time, on-budget completion while maintaining the highest safety standards.",
+      "imagePrompt": "Multiple views of Nigerian refinery operations, split screen showing process control systems, industrial piping networks, technical drawings, and engineers collaborating, professional industrial photography, technical precision, modern facilities",
       "layout": "grid"
+    },
+    {
+      "id": "expertise",
+      "name": "Our Expertise",
+      "copy": "Technical Capabilities\n\nOur process engineering expertise covers the full spectrum of refinery operations:\n\n• Crude Oil Distillation & Fractionation\n• Catalytic Reforming & Cracking Processes\n• Hydrocracking & Hydrotreating Systems\n• Process Safety & Hazard Analysis\n• Equipment Design & Specification\n• Process Simulation & Modeling\n• Energy Efficiency Optimization\n• Environmental Compliance Solutions\n• Instrumentation & Control Systems\n• Maintenance Engineering Support\n\nWe combine international best practices with local operational knowledge to deliver solutions that work in the Nigerian context. Our engineers stay current with the latest process technologies and industry developments to provide cutting-edge solutions.",
+      "imagePrompt": "Close-up of advanced refinery process equipment, industrial valves, pressure gauges, stainless steel piping systems, technical instrumentation, professional technical photography, sharp focus, industrial blue tones, showing precision engineering",
+      "layout": "default"
+    },
+    {
+      "id": "commitment",
+      "name": "Our Commitment",
+      "copy": "Quality, Safety & Excellence\n\nAt Oil Technologies Refining Solutions Limited, we are committed to:\n\nTechnical Excellence: Delivering engineering solutions that meet and exceed industry standards, leveraging proven methodologies and innovative approaches.\n\nSafety First: Prioritizing process safety in every design, ensuring operations protect personnel, assets, and the environment.\n\nOperational Reliability: Designing robust systems that deliver consistent performance and minimize unplanned downtime.\n\nLocal Capacity Building: Developing Nigerian engineering talent and contributing to the growth of indigenous technical expertise in the oil and gas sector.\n\nSustainable Solutions: Incorporating environmental considerations and energy efficiency into all our engineering solutions.\n\nClient Partnership: Building long-term relationships based on trust, transparency, and consistent delivery of value.",
+      "imagePrompt": "Nigerian engineers in professional safety gear conducting site inspection at refinery, hard hats and safety equipment, modern industrial facility in background, professional corporate photography, natural daylight, showing professionalism and safety culture",
+      "layout": "centered"
     },
     {
       "id": "contact",
       "name": "Contact Us",
-      "copy": "Ready to discuss your manufacturing needs? Crystal-Grace Limited and Crystal-Jem Limited are here to bring your production vision to life. Visit us at our facility in Alakia or reach out through any of our contact channels. Our team of manufacturing experts is ready to provide solutions tailored to your business requirements.",
-      "imagePrompt": "Professional Nigerian business contact scene, modern office reception area with manufacturing awards on wall, friendly receptionist at desk, visitors waiting area, large windows showing factory floor in background, corporate professional atmosphere, warm lighting",
-      "layout": "default"
+      "copy": "Get in Touch\n\nReady to discuss your refinery process engineering needs? Our team is available to provide expert consultation and develop customized solutions for your operations.\n\nOil Technologies Refining Solutions Limited\nNo 3 Unity Olosan Road, Alakia\nEgbeda Local Government\nNigeria\n\nPhone: +234 803 434 2126\nEmail: info@oiltechnologies.org\n\nBusiness Hours:\nMonday - Friday: 8:00 AM - 5:00 PM\nSaturday: 9:00 AM - 2:00 PM\n\nWhether you need process design, optimization services, technical consultancy, or project management support, we are here to help. Contact us today to schedule a consultation with our experienced process engineers.",
+      "imagePrompt": "Modern Nigerian office building exterior with oil and gas company signage, professional corporate architecture, clear blue sky, well-maintained grounds, professional real estate photography, inviting and professional atmosphere",
+      "layout": "split"
     }
   ],
   "contact": {
     "phone": "+234 803 434 2126",
-    "email": "info@crystalgrace.ng",
-    "address": "No 3 Unity Olosan Road, Alakia, Egbeda Local Government, Ibadan, Nigeria",
+    "email": "info@oiltechnologies.org",
+    "address": "No 3 Unity Olosan Road, Alakia, Egbeda Local Government, Nigeria",
     "whatsapp": "https://wa.me/2348034342126"
   }
 }
